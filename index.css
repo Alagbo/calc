@@ -2,6 +2,7 @@
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    background-color: #4f7e8e;
 }
 /* for .calculator area  */
 .my{
@@ -61,7 +62,8 @@ button{
     color: red;
 }
 P{
-    background-color: white;
+    /* background-color: white; */
+    background-color: #4f7e8e;
      height: 45px;
     border: none;
     width: 70%;

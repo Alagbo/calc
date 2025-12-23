@@ -4,18 +4,18 @@ var input =  document.querySelector("input")
 for (var i = 0; i<number.length; i++){
     number[i].addEventListener("click", function(number_click){
         var number_click = this.textContent;
-        if (this.classList.contains("num")){
+        if (this.classList.contains("num") || this.classList.contains("operator") || this.classList.contains("decimalPoint")){
           input.value += number_click;
         }
-        if(this.classList.contains("operator")){
-          input.value += number_click;
-        }
+        // if(this.classList.contains("operator")){
+        //   input.value += number_click;
+        // }
         if(this.classList.contains("equal")){
           input.value = eval(input.value);
         }
-        if(this.classList.contains("decimalPoint")){
-          input.value += number_click
-        }
+        // if(this.classList.contains("decimalPoint")){
+        //   input.value += number_click
+        // }
       
        switch (number_click) {
         case "C":
