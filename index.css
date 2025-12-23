@@ -1,0 +1,105 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+/* for .calculator area  */
+.my{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    width: 30%;
+    /* height: 65vh; */
+    padding: 10px;
+    border-radius: 5%;
+    margin: auto;
+}
+/* for input-display  */
+#input{
+    text-align: right;
+    height: 45px;
+    border: none;
+    width: 70%;
+    font-size: 2rem;
+    margin: auto;
+}
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    /* grid-template-columns: repeat(4, minmax(55px, 50px)); */
+    align-items: center;
+    margin: 10px;
+   justify-content: center;
+    gap: 10px;
+}
+/* for all buttons  */
+button{
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    margin: 5px;
+    background-color: white;
+}
+.operator{
+    color: green;
+}
+
+/* for equal sign  */
+.equal{
+    background-color: green;
+    color: white;
+}
+.clear{
+    color: red;
+}
+.del{
+    font-size: 1rem;
+    color: red;
+}
+P{
+    background-color: white;
+     height: 45px;
+    border: none;
+    width: 70%;
+    font-size: 2rem;
+    margin: auto;
+    text-align: right;
+}
+.press{
+ box-shadow: 0 3px 4px 0 #4f7e8e;
+  opacity: 0.5;
+}
+/* media quaries android phones */
+@media (max-width:700px) {
+   .my{
+     background-color:brown;
+    width: 80%;
+   } 
+   .calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+      /* grid-template-columns: repeat(4, minmax(40px, 50px));  */
+   }
+    
+}
+
+/* media query for tablet phones  */
+@media (min-width:700px) and (max-width :850px) {
+   .my{
+     background-color:burlywood;
+    /* width: 90%; */
+   } 
+   .calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+      /* grid-template-columns: repeat(4, minmax(40px, 50px));  */
+   }
+   p,#input{
+    width: 70%;
+   }
+    
+}
